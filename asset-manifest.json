@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/12Gustavo21/To-do-list/static/js/main.7bf6cd0a.js",
-    "index.html": "/12Gustavo21/To-do-list/index.html",
-    "main.7bf6cd0a.js.map": "/12Gustavo21/To-do-list/static/js/main.7bf6cd0a.js.map"
+    "main.js": "/To-do-list/static/js/main.7bf6cd0a.js",
+    "index.html": "/To-do-list/index.html",
+    "main.7bf6cd0a.js.map": "/To-do-list/static/js/main.7bf6cd0a.js.map"
   },
   "entrypoints": [
     "static/js/main.7bf6cd0a.js"
