@@ -2,7 +2,7 @@
   "name": "list",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/12Gustavo21/To-do-list",
+  "homepage": "https://12Gustavo21.github.io/To-do-list",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
