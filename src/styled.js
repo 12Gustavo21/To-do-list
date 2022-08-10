@@ -1,7 +1,16 @@
 import styled from "styled-components";
+import { createGlobalStyle } from "styled-components";
+
+export const Global = createGlobalStyle`
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+`;
 
 export const Body = styled.section`
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     background: linear-gradient(140deg, #dcddff, #3071e7);
     background-size: 400% 400%;
     animation: gradient 3.5s ease infinite;
@@ -10,7 +19,6 @@ export const Body = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Montserrat', sans-serif;
 
     @keyframes gradient {
     0% {
@@ -43,11 +51,11 @@ export const Main = styled.section`
 `;
 
 export const Label = styled.label`
-    margin: 10px;
+    margin-left: 10px;
 `;
 
 export const Input = styled.input`
-    width: 82%;
+    width: 87%;
     height: 5vh;
     color: #fff;
     background: none;
@@ -63,6 +71,25 @@ export const Button = styled.button`
     padding: 2px 5px;
     margin-right: 10px;
     border: 1px solid #fff;
-    font-family: 'Montserrat', sans-serif;
     font-size: .9em;
+`;
+
+export const Result = styled.div`
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 20px;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+`;
+
+export const Check = styled.button`
+    cursor: pointer;
+    background: none;
+    border: 1px solid #fff;
+    width: 35px;
+    color: #f00;
+    margin-bottom: 5px;
+    font-size: 1em;
+    padding: 2px
 `;

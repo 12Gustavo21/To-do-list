@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./App.css"
 import * as S from "./styled";
 
 export default class App extends Component {
@@ -45,17 +44,18 @@ export default class App extends Component {
     render() {
         return (
             <S.Body>
+                <S.Global />
                 <S.Title>TO  DO  LIST</S.Title>
                 <S.Main>
                     <S.Label>TO DO:</S.Label>
-                    <S.Input onChange={this.handleChange} onKeyPress={this.enter} value={this.state.tarefa} />
-                    <S.Button onClick={this.add}>Adicionar</S.Button>
+                    <S.Input onChange={this.handleChange} onKeyPress={this.enter} value={this.state.tarefa} title="Write your task" />
+                    <S.Button onClick={this.add} title="Add a task" >Add</S.Button>
                 </S.Main>
                 {this.state.lista.map((item) => (
-                    <div key={item.id}>
+                    <S.Result key={item.id}>
                         <h3>{item.tarefa}</h3>
-                        <button onClick={() => this.remove(item.id)}>X</button>
-                    </div>
+                        <S.Check onClick={() => this.remove(item.id)} title="Completed" >X</S.Check>
+                    </S.Result>
                 ))}
             </S.Body>
         );
